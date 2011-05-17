@@ -2,9 +2,11 @@
 
 This vim bundle adds syntax highlighting for the dynamic stylesheet language [LESS](http://lesscss.org).
 
+This bundle is compatible with [vim-color-css](https://github.com/skammer/vim-css-color).
+
 ## Installing and Using ##
 
-1. Install [pathogen](http://www.vim.org/scripts/script.php?script_id=2332) into `~/.vim/autoload/` and add the
+- Install [pathogen](http://www.vim.org/scripts/script.php?script_id=2332) into `~/.vim/autoload/` and add the
    following line to your `~/.vimrc`:
 
         call pathogen#runtime_append_all_bundles()
@@ -12,14 +14,16 @@ This vim bundle adds syntax highlighting for the dynamic stylesheet language [LE
      Be aware that it must be added before any `filetype plugin indent on`
      lines according to the install page.
 
-2. Create, and change into, the `~/.vim/bundle/` directory:
+- Make a clone of the `vim-less` repository:
 
         $ mkdir -p ~/.vim/bundle
         $ cd ~/.vim/bundle
-
-3. Make a clone of the `vim-less` repository:
-
         $ git clone https://github.com/groenewege/vim-less
+
+- OR use git submodules:
+
+        $ git submodule add https://github.com/groenewege/vim-less.git bundle/vim-less
+        $ git submodule init
 
 That's it. Pathogen should handle the rest. Opening a file with a `.less`
 extension will load everything.
