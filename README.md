@@ -1,6 +1,6 @@
 # VIM-LESS #
 
-This vim bundle adds syntax highlighting for the dynamic stylesheet language [LESS](http://lesscss.org).
+This vim bundle adds syntax highlighting and indenting for the dynamic stylesheet language [LESS](http://lesscss.org).
 
 This bundle is compatible with [vim-css-color](https://github.com/skammer/vim-css-color).
 
