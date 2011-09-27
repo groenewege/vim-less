@@ -2,7 +2,9 @@
 
 This vim bundle adds syntax highlighting and indenting for the dynamic stylesheet language [LESS](http://lesscss.org).
 
-This bundle is compatible with [vim-css-color](https://github.com/skammer/vim-css-color).
+This bundle is compatible with [vim-css-color](https://github.com/skammer/vim-css-color), 
+[vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) and possibly other plugins that place code 
+in `after/syntax/css.vim` or `after/syntax/css/*.vim`.
 
 ## Installing and Using ##
 
