@@ -3,6 +3,9 @@ if exists("b:current_syntax")
 endif
 
 runtime! syntax/css.vim
+runtime! after/syntax/css.vim
+" load files from vim-css3-syntax plugin (https://github.com/hail2u/vim-css3-syntax)
+runtime! after/syntax/css/*.vim
 
 syn case ignore
 
