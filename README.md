@@ -6,6 +6,8 @@ This bundle is compatible with [vim-css-color](https://github.com/skammer/vim-cs
 [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) and possibly other plugins that place code 
 in `after/syntax/css.vim` or `after/syntax/css/*.vim`.
 
+![vim-less with vim-css-color and vim-css3-syntax (colorscheme solarized)](https://github.com/lenniboy/vim-less/raw/master/screenshot.png)
+
 ## Installing and Using ##
 
 - Install [pathogen](http://www.vim.org/scripts/script.php?script_id=2332) into `~/.vim/autoload/` and add the
