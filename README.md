@@ -13,10 +13,7 @@ in `after/syntax/css.vim` or `after/syntax/css/*.vim`.
 - Install [pathogen](http://www.vim.org/scripts/script.php?script_id=2332) into `~/.vim/autoload/` and add the
    following line to your `~/.vimrc`:
 
-        call pathogen#runtime_append_all_bundles()
-
-     Be aware that it must be added before any `filetype plugin indent on`
-     lines according to the install page.
+        call pathogen#infect()
 
 - Make a clone of the `vim-less` repository:
 
