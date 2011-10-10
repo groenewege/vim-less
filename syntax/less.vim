@@ -12,9 +12,9 @@ syn case ignore
 syn region lessDefinition transparent matchgroup=cssBraces start='{' end='}' contains=css.*Attr,css.*Prop,cssComment,cssValue.*,cssColor,cssTagName,cssPseudoClass,cssUrl,cssImportant,cssError,cssStringQ,cssStringQQ,cssFunction,cssUnicodeEscape,lessDefinition,lessComment,lessClassChar,lessVariable,lessMixinChar,lessAmpersandChar,lessFunction,@cssColors
 
 syn match lessVariable "@[[:alnum:]_-]\+" contained 
-syn match lessVariable "@[[:alnum:]_-]\+" nextgroup=lessVariableAssignment
-syn match lessVariableAssignment ":" contained nextgroup=lessVariableValue
-syn match lessVariableValue ".*;"me=e-1 contained contains=lessVariable,lessOperator,lessDefault,@cssColors "me=e-1 means that the last char of the pattern is not highlighted
+syn match lessVariable "@[[:alnum:]_-]\+" nextgroup=lessVariableAssignment skipwhite
+syn match lessVariableAssignment ":" contained nextgroup=lessVariableValue skipwhite
+syn match lessVariableValue ".*;"me=e-1 contained contains=lessVariable,lessOperator,lessDefault,cssValue.*,@cssColors "me=e-1 means that the last char of the pattern is not highlighted
 
 syn match lessOperator "+" contained
 syn match lessOperator "-" contained
