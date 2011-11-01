@@ -9,7 +9,7 @@ runtime! after/syntax/css/*.vim
 
 syn case ignore
 
-syn region lessDefinition transparent matchgroup=cssBraces start='{' end='}' contains=lessAssignment,css.*Attr,css.*Prop,cssComment,cssValue.*,cssColor,cssTagName,cssPseudoClass,cssUrl,cssImportant,cssError,cssStringQ,cssStringQQ,cssFunction,cssUnicodeEscape,lessDefinition,lessComment,lessClassChar,lessVariable,lessMixinChar,lessAmpersandChar,lessFunction,@cssColors
+syn region lessDefinition transparent matchgroup=cssBraces start='{' end='}' contains=lessAssignment,css.*Attr,css.*Prop,cssComment,cssValue.*,cssColor,cssTagName,cssIdentifier,cssPseudoClass,cssUrl,cssImportant,cssError,cssStringQ,cssStringQQ,cssFunction,cssUnicodeEscape,lessDefinition,lessComment,lessClassChar,lessVariable,lessMixinChar,lessAmpersandChar,lessFunction,@cssColors
 
 syn match lessVariable "@[[:alnum:]_-]\+" contained 
 syn match lessVariable "@[[:alnum:]_-]\+" nextgroup=lessAssignment skipwhite
