@@ -29,6 +29,11 @@ in `after/syntax/css.vim` or `after/syntax/css/*.vim`.
 That's it. Pathogen should handle the rest. Opening a file with a `.less`
 extension will load everything.
 
+### Map
+.less to .css , lessc is required.
+
+    nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
+
 ## Credits ##
 
 Inspiration from [vim-haml](https://github.com/tpope/vim-haml), 
