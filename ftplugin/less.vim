@@ -12,6 +12,7 @@ let b:did_ftplugin = 1
 
 let b:undo_ftplugin = "setl cms< def< inc< inex< ofu< sua<"
 
+setlocal iskeyword+=-
 setlocal commentstring=//\ %s
 setlocal define=^\\s*\\%(@mixin\\\|=\\)
 setlocal includeexpr=substitute(v:fname,'\\%(.*/\\\|^\\)\\zs','_','')
