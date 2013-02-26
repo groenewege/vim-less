@@ -30,7 +30,24 @@ syn match lessMixinChar "\.[[:alnum:]_-]\@=" contained nextgroup=lessClass
 syn match lessAmpersandChar "&" contained nextgroup=lessClass,cssPseudoClass
 syn match lessClass "[[:alnum:]_-]\+" contained
 
-syn keyword lessFunction lighten darken saturate desaturate fadein fadeout spin hue saturation lightness containedin=cssDefinition contained
+" functions {{{
+
+" string functions
+syn keyword lessFunction escape e % containedin=cssDefinition contained
+" misc functions
+syn keyword lessFunction color unit containedin=cssDefinition contained
+" math functions
+syn keyword lessFunction ceil floor percentage round containedin=cssDefinition contained
+" color definition
+syn keyword lessFunction rgb rgba argb hsl hsla hsv hsva containedin=cssDefinition contained
+" color channel information
+syn keyword lessFunction hue saturation lightness red green blue alpha luma containedin=cssDefinition contained
+" color operations
+syn keyword lessFunction saturate desaturate lighten darken fadein fadeout fade spin mix greyscale contrast containedin=cssDefinition contained
+" color blending
+syn keyword lessFunction multiply screen overlay softlight hardlight difference exclusion average negation containedin=cssDefinition contained
+
+" }}}
 
 syn match lessComment "//.*$" contains=@Spell
 
@@ -45,4 +62,3 @@ hi def link lessNestedProperty Type
 hi def link lessClass PreProc
 
 let b:current_syntax = "less"
-
