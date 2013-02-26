@@ -45,4 +45,3 @@ hi def link lessNestedProperty Type
 hi def link lessClass PreProc
 
 let b:current_syntax = "less"
-
