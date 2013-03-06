@@ -18,6 +18,7 @@ setlocal define=^\\s*\\%(@mixin\\\|=\\)
 setlocal includeexpr=substitute(v:fname,'\\%(.*/\\\|^\\)\\zs','_','')
 setlocal omnifunc=csscomplete#CompleteCSS
 setlocal suffixesadd=.less
+setlocal comments=s1:/*,mb:*,ex:*/
 
 let &l:include = '^\s*@import\s\+\%(url(\)\=["'']\='
 
