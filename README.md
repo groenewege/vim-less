@@ -23,7 +23,7 @@ in `after/syntax/css.vim` or `after/syntax/css/*.vim`.
 
 - OR use [vundle](https://github.com/gmarik/vundle), adding this line to your `~/.vimrc`:
 
-        Bundle 'lunaru/vim-less'
+        Bundle 'groenewege/vim-less'
 
 - OR use git submodules:
 
