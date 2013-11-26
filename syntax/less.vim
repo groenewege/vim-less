@@ -9,7 +9,7 @@ runtime! after/syntax/css/*.vim
 
 syn case ignore
 
-syn region lessDefinition transparent matchgroup=cssBraces start='{' end='}' contains=css.*Attr,css.*Prop,cssComment,cssValue.*,cssColor,cssTagName,cssPseudoClass,cssUrl,cssImportant,cssError,cssStringQ,cssStringQQ,cssFunction,cssUnicodeEscape,lessDefinition,lessComment,lessClassChar,lessVariable,lessMixinChar,lessAmpersandChar,lessFunction,lessNestedSelector,@cssColors fold
+syn region lessDefinition transparent matchgroup=cssBraces start='{' end='}' contains=cssFontProp,cssFontDescriptorProp,cssColorProp,cssTextProp,cssBoxProp,cssGeneratedContentProp,cssPagingProp,cssUIProp,cssRenderProp,cssAuralProp,cssTableProp,css.*Attr,cssValue.*,cssColor,cssURL,cssImportant,cssError,cssStringQ,cssStringQQ,cssFunction,cssUnicodeEscape,cssRenderProp,lessDefinition,lessComment,lessClassChar,lessVariable,lessMixinChar,lessAmpersandChar,lessFunction,lessNestedSelector,@cssColors fold
 
 syn match lessVariable "@[[:alnum:]_-]\+" contained
 syn match lessVariable "@[[:alnum:]_-]\+" nextgroup=lessVariableAssignment skipwhite
@@ -35,7 +35,7 @@ syn match lessClass "[[:alnum:]_-]\+" contained
 " string functions
 syn keyword lessFunction escape e % containedin=cssDefinition contained
 " misc functions
-syn keyword lessFunction color unit containedin=cssDefinition contained
+syn keyword lessFunction unit containedin=cssDefinition contained
 " math functions
 syn keyword lessFunction ceil floor percentage round containedin=cssDefinition contained
 " color definition
